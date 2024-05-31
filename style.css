@@ -9,8 +9,32 @@
 
 body {
     min-height: 100vh;
-    background: #d2d2d2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
+.dropdown * {
+    box-sizing: border-box;
+}
+
+.select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px #2a2f3b solid;
+    border-radius: 0.5em;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.select-clicked {
+    border: 2px #26489a solid;
+    box-shadow: 0 0 0.8em #26489a;
+}
+
+.select:hover
 
 .sidebar-header {
     display: flex;

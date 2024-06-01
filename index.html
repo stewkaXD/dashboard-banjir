@@ -4,53 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DASHBOARD</title>
-    <!-- Dashboard icon link -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    
-    <!-- Histori icon link -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <!-- CSS link -->
     <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
 </head>
 <body>
-    <aside class="sidebar">
-        <div class="sidebar-header">
-            <h2>Dashboard Banjir</h2>
-        </div>
-        <ul class="sidebar-links">
-            <li>
-                <a href="index.html"><span class="material-symbols-outlined">
-                    bar_chart_4_bars
-                    </span>Dashboard</a>
-            </li>
-            <li>
-                <a href="histori.html"><span class="material-symbols-outlined">
-                    history
-                    </span>Histori</a>
-            </li>
-        </ul>
-    </aside>
-
-    <div class="dropdown">
-        <div class="select">
-            <span class="selected">Bendung Katulampa</span>
-            <div class="caret"></div>
-        </div>
-        <ul class="menu">
-            <li>Bendung Katulampa</li>
-            <li>Manggarai BKB</li>
-            <li>PA. Karet</li>
-            <li>Pasar Ikan - Laut</li>
-            <li>Pos Angke Hulu</li>
-            <li>Pos Cipinang Hulu</li>
-            <li>Pos Depok</li>
-            <li>Pos Krukut Hulu</li>
-            <li>Pos Pesanggrahan</li>
-            <li>Pos Sunter Hulu</li>
-            <li>Pulo Gadung</li>
-            <li>Waduk Pluit</li>
-        </ul>
+    <div>
+        <h1>Dashboard Banjir</h1>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <div class="flex-container">
+        <div class="dropdown">
+            <select name="locationsSelect" id="select">
+                <option value="Bendung_Katulampa">Bendung Katulampa</option>
+                <option value="Manggarai_BKB">Manggarai BKB</option>
+                <option value="PA._Karet">PA. Karet</option>
+                <option value="Pasar_Ikan">Pasar Ikan</option>
+                <option value="Pos_Angke_Hulu">Pos Angke Hulu</option>
+                <option value="Pos_Cipinang_Hulu">Pos Cipinang Hulu</option>
+                <option value="Pos_Depok">Pos Depok</option>
+                <option value="Pos_Krukut_Hulu">Pos Krukut Hulu</option>
+                <option value="Pos_Pesanggrahan">Pos Pesanggrahan</option>
+                <option value="Pos_Sunter_Hulu">Pos Sunter Hulu</option>
+                <option value="Pulo_Gadung">Pulo Gadung</option>
+                <option value="Waduk_Pluit">Waduk Pluit</option>
+            </select>
+            <button id="submit" type="submit" name="submit"> Submit </button>
+        </div>
+        <br/><br/>
+        <img id="chart" src=""></img>
+        
+    </div>
+
 </body>
 </html>

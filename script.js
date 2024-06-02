@@ -8,10 +8,10 @@ form.addEventListener('submit', event => {
     chartImgElem.src = './chart_images/' + selectElem.value + '.csv.png';
 
     if (selectElem.value == 'Pasar_Ikan_-_Laut') {
-        siagaElem.innerText = "> Siaga II"
+        siagaElem.innerText = "Siaga II"
     }
     else {
-        siagaElem.innerText = "> Belum ada Siaga"
+        siagaElem.innerText = "Belum ada Siaga"
     }
 })
 
@@ -24,9 +24,9 @@ fetch(weather_api)
         const weather_desc = data.weather[0].description;
         const temp = data.main.temp;
 
-        document.getElementById('weatherName').innerText = `> ${weather} /`;
-        document.getElementById('weatherDesc').innerText = ` / ${weather_desc}`;
-        document.getElementById('temperature').innerText = `(${temp}°C)`;
+        document.getElementById('weatherName').innerText = `${weather}`;
+        document.getElementById('weatherDesc').innerText = `Description: ${weather_desc}`;
+        document.getElementById('temperature').innerText = `${temp}°C`;
     })
 
 

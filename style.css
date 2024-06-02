@@ -26,6 +26,9 @@
     padding: 20px;
     border-style:groove;
     display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
 }
 
 .weather{
@@ -33,6 +36,9 @@
     padding: 20px;
     border-style:groove;
     display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
 }
 
 .history{
@@ -48,6 +54,10 @@
     box-shadow: 5px 5px grey;
     padding: 10px;
     border-style:groove;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
 }
 
 select {

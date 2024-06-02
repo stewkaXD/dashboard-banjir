@@ -1,12 +1,53 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-
-body {
-    padding: 0px 30px;
+.body {
+    background-color: red;
 }
 
-.flex-container {
-    display: flexbox;
-    flex-direction: column;
+.grid-container {
+    padding: 0px 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 460px);
+    grid-gap: 20px;
+    width: 100vh;
+}
+
+.title {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-self: center;
+}
+
+.dropdown{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.status{
+    box-shadow: 5px 5px grey;
+    padding: 20px;
+    border-style:groove;
+    display: flex;
+}
+
+.weather{
+    box-shadow: 5px 5px grey;
+    padding: 20px;
+    border-style:groove;
+    display: flex;
+}
+
+.history{
+    grid-row: span 2;
+    box-shadow: 5px 5px grey;
+    padding: 10px;
+    border-style:groove;
+}
+
+.chart-image{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    box-shadow: 5px 5px grey;
+    padding: 10px;
+    border-style:groove;
 }
 
 select {
@@ -15,6 +56,3 @@ select {
     font-size: medium;
 }
 
-select:focus{
-    outline: none;
-}

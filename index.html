@@ -4,39 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DASHBOARD</title>
-
-    <!-- CSS link -->
     <link rel="stylesheet" href="style.css">
-
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
 </head>
 <body>
-    <div>
-        <h1>Dashboard Banjir</h1>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <div class="flex-container">
-        <div class="dropdown">
-            <select name="locationsSelect" id="select">
-                <option value="Bendung_Katulampa">Bendung Katulampa</option>
-                <option value="Manggarai_BKB">Manggarai BKB</option>
-                <option value="PA._Karet">PA. Karet</option>
-                <option value="Pasar_Ikan">Pasar Ikan</option>
-                <option value="Pos_Angke_Hulu">Pos Angke Hulu</option>
-                <option value="Pos_Cipinang_Hulu">Pos Cipinang Hulu</option>
-                <option value="Pos_Depok">Pos Depok</option>
-                <option value="Pos_Krukut_Hulu">Pos Krukut Hulu</option>
-                <option value="Pos_Pesanggrahan">Pos Pesanggrahan</option>
-                <option value="Pos_Sunter_Hulu">Pos Sunter Hulu</option>
-                <option value="Pulo_Gadung">Pulo Gadung</option>
-                <option value="Waduk_Pluit">Waduk Pluit</option>
-            </select>
-            <button id="submit" type="submit" name="submit"> Submit </button>
+    
+    <div class="grid-container">
+        <div class="title">
+            <h2>Dashboard Banjir</h2>
         </div>
-        <br/><br/>
-        <img id="chart" src=""></img>
-        
-    </div>
 
+        <div class="dropdown">
+            <form id="dropdownForm">
+                <select name="locationsSelect" id="select">
+                    <option value="Bendung_Katulampa">Bendung Katulampa</option>
+                    <option value="Manggarai_BKB">Manggarai BKB</option>
+                    <option value="PA._Karet">PA. Karet</option>
+                    <option value="Pasar_Ikan_-_Laut">Pasar Ikan</option>
+                    <option value="Pos_Angke_Hulu">Pos Angke Hulu</option>
+                    <option value="Pos_Cipinang_Hulu">Pos Cipinang Hulu</option>
+                    <option value="Pos_Depok">Pos Depok</option>
+                    <option value="Pos_Krukut_Hulu">Pos Krukut Hulu</option>
+                    <option value="Pos_Pesanggrahan">Pos Pesanggrahan</option>
+                    <option value="Pos_Sunter_Hulu">Pos Sunter Hulu</option>
+                    <option value="Pulo_Gadung">Pulo Gadung</option>
+                    <option value="Waduk_Pluit">Waduk Pluit</option>
+                </select>
+                <button id="submitBtn"> Submit </button>
+            </form>
+        </div>
+
+        <div class="status">
+            <p>Status Siaga -</p><p id="statusSiaga"></p>
+        </div>
+
+        <div class="weather">
+            <p>Cuaca -</p>
+            <p id="weatherName"></p>
+            <p id="weatherDesc"></p>
+            <p id="temperature"></p>
+        </div>
+
+        <div class="history">
+            <p>Histori Banjir</p>
+        </div>
+
+        <div class="chart-image">
+            <p>Ketinggian Pintu Air</p>
+            <img id="waterLevelChart" width="800"></img>
+        </div>
+    </div>
 </body>
 </html>

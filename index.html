@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DASHBOARD</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="script.js" type="module"></script>
 </head>
 <body>
     
     <div class="grid-container">
         <div class="title">
-            <h2>Dashboard Banjir</h2>
+            <h2>DASHBOARD BANJIR JAKARTA</h2>
         </div>
 
         <div class="dropdown">
@@ -35,34 +36,50 @@
         </div>
 
         <div class="status">
-            <h3>Status Siaga</h3>
+            <h3 style="margin-top: 10px; margin-bottom: 10px;">Status Siaga</h3>
             <p id="statusSiaga"></p>
         </div>
 
         <div class="weather">
-            <h3>Cuaca</h3>
-            <p id="weatherName"></p>
-            <p id="weatherDesc"></p>
-            <p id="temperature"></p>
+            <h3 style="margin-top: 10px; margin-bottom: 3px;">Jakarta</h3>
+            <div class="weatherContent">
+                <div id="icon-container"></div>
+                <div class="weatherDesc">
+                    <p id="weather_name"></p>
+                    <p id="temperature" style="font-size: 25px; margin-top: 10px; margin-bottom: 10px;"></p>
+                    <div class="humidity">
+                        <span class="material-symbols-outlined">humidity_mid</span><p id="humidity" style="margin-top: 10px; margin-bottom: 10px;"></p>
+                    </div>
+                    <div class="wind-speed">
+                        <span class="material-symbols-outlined">air</span><p id="wind_speed" style="margin-top: 10px; margin-bottom: 10px;"></p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="history">
-            <h3>Histori Banjir</h3>
+            <h3 style="margin-top: 10px; margin-bottom: 10px;">Histori Banjir</h3>
             <p>Top 10 Kelurahan dengan Banjir Terbanyak</p>
             <img src="/chart_images/top_10_kecamatan.png" alt="" width="400">
+            <br>
+            <br>
+            <br>
             <p>Jumlah Insiden Banjir Tahunan Setiap Kotanya</p>
             <img src="/chart_images/growth_per_year.png" alt="" width="430">
+            <br>
+            <br>
+            <br>
             <p>Frekuensi Banjir Saat Hujan</p>
             <img src="/chart_images/frequency_during_rain.png" alt="" width="400">
         </div>
 
         <div class="chart-image">
-            <h3>Ketinggian Pintu Air</h3>
+            <h3 style="margin-top: 10px; margin-bottom: 10px;">Ketinggian Pintu Air</h3>
             <img id="waterLevelChart" width="800"></img>
         </div>
 
         <div class="prediction">
-            <h3>Prediction</h3>
+            <h3 style="margin-top: 10px; margin-bottom: 10px;">Prediction</h3>
             <img src="/chart_images/actual_vs_prediction.png" alt=""  width="700">
         </div>
     </div>

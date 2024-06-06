@@ -42,13 +42,28 @@
 }
 
 .history{
-    grid-row: span 2;
+    grid-row: span 3;
     box-shadow: 5px 5px grey;
     padding: 10px;
     border-style:groove;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .chart-image{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    box-shadow: 5px 5px grey;
+    padding: 10px;
+    border-style:groove;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.prediction{
     grid-column-start: 1;
     grid-column-end: 3;
     box-shadow: 5px 5px grey;
